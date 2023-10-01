@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
-import Sidebar from "./Sidebar/Sidebar";
-import MainArea from "./MainArea/MainArea";
+import Sidebar from "./components/shared/Sidebar/Sidebar";
+import MainArea from "./components/shared/MainArea/MainArea";
 
 function App() {
   const [activeForm, setActiveForm] = useState<"A" | "B">("A"); // Specify the type for activeForm

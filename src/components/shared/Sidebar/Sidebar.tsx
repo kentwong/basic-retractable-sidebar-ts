@@ -1,6 +1,6 @@
 import React from "react";
-import FormA from "./FormA"; // Import FormA
-import FormB from "./FormB"; // Import FormB
+import FormA from "../../A/FormA"; // Import FormA
+import FormB from "../../B/FormB"; // Import FormB
 
 interface SidebarProps {
   activeForm: "A" | "B";

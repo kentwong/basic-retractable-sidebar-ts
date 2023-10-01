@@ -1,6 +1,6 @@
 import React, { FC } from "react";
-import ComponentA from "./ComponentA"; // Import ComponentA
-import ComponentB from "./ComponentB"; // Import ComponentB
+import ComponentA from "../../A/ComponentA"; // Import ComponentA
+import ComponentB from "../../B/ComponentB"; // Import ComponentB
 
 interface MainAreaProps {
   activeForm: "A" | "B";
