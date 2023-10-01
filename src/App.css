@@ -1,0 +1,117 @@
+/* Style for the entire app container */
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+/* Style for the container holding the sidebar and main area */
+.container {
+  margin-left: 50px;
+  margin-top: 50px;
+  display: flex;
+  width: 90%;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  transition: margin-left 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+
+.container.expanded {
+  margin-left: 250px;
+  width: calc(90% - 250px);
+}
+
+/* Updated styles for the sidebar */
+.sidebar {
+  min-width: 50px;
+  width: 250px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  transform: translateX(-200px);
+  transition: transform 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+
+/* Updated style for expanded sidebar */
+.sidebar.expanded {
+  transform: translateX(0);
+  width: 250px;
+}
+
+/* Style for the toggle button */
+.toggle-button {
+  position: absolute;
+  top: 10px;
+  left: 230px;
+  background-color: #3498db;
+  color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.toggle-button:hover {
+  background-color: #2980b9;
+}
+
+/* Style for buttons in the sidebar */
+.buttons button {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Style for the active button */
+.buttons button.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Style for the form in the sidebar */
+.form {
+  margin-top: 20px;
+}
+
+/* Updated styles for the main area */
+.main-area {
+  flex-grow: 1;
+  padding: 20px;
+  transition: margin-left 0.3s ease-in-out;
+}
+
+/* Additional styling for FormA and FormB (customize as needed) */
+.form input[type="text"],
+.form input[type="email"],
+.form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+}
+
+/* Additional styling for ComponentA and ComponentB (customize as needed) */
+.main-area h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
